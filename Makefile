@@ -9,4 +9,6 @@ MASTER_SITES=	https://github.com/pdemonaco/${PORTNAME}/archive/
 MAINTAINER=	pdemon@gmail.com
 COMMENT=	Generic Script Based Deferred Auth Plugin for OpenVPN
 
+LICENSE=	APACHE20
+
 .include <bsd.port.mk>
