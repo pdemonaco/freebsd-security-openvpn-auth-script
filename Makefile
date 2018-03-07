@@ -3,9 +3,6 @@
 PORTNAME=	openvpn-auth-script
 DISTVERSION=	1.0.0.1
 CATEGORIES=	security net
-# Set because the distfile doesn't include the package name
-DISTFILES=	${DISTVERSION}${EXTRACT_SUFX}
-DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	pdemon@gmail.com
 COMMENT=	Generic Script Based Deferred Auth Plugin for OpenVPN
@@ -16,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 # We need OpenVPN to build
 BUILD_DEPENDS=	${LOCALBASE}/include/openvpn-plugin.h:security/openvpn
 
-USES=	gmake
+USES=	gmake metaport
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	pdemonaco
