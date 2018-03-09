@@ -10,7 +10,6 @@ COMMENT=	Generic Script Based Deferred Auth Plugin for OpenVPN
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-
 # We need OpenVPN to build
 BUILD_DEPENDS=	${LOCALBASE}/include/openvpn-plugin.h:security/openvpn
 
